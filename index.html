@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get the Fastest Food Delivery!</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="css/phone.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400&display=swap" rel="stylesheet"> -->
 </head>
@@ -15,10 +16,10 @@
             <img src="img/logo.jpg" alt="Domato.com">
         </div>
         <ul>
-            <li class="items"><a href="#">Home</a></li>
-            <li class="items"><a href="#">Services</a></li>
-            <li class="items"><a href="#">About Us</a></li>
-            <li class="items"><a href="#">Contact Us</a></li>
+            <li class="items"><a href="#home">Home</a></li>
+            <li class="items"><a href="#services-container">Services</a></li>
+            <li class="items"><a href="#client-section">Clients</a></li>
+            <li class="items"><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
 
@@ -29,7 +30,7 @@
         <button class="btn">Order Now</button>
     </section>
 
-    <section class="services-container">
+    <section id="services-container">
         <h1 class="h-primary center">Our Services</h1>
         <div id="services">
             <div class="box">
@@ -65,7 +66,35 @@
             <div class="client-item">
                 <img src="img/clogo4.png" alt="Our Clients">
             </div>
+            <div class="client-item">
+                <img src="img/clogo5.png" alt="Our Clients">
+            </div>
         </div>
     </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="name1" placeholder="Enter your email">
+                    <label for="phone">Phone no.: </label>
+                    <input type="phone" name="name" id="name2" placeholder="Enter your Phone No.">
+                    <label for="message">Feedback: </label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your Feedback"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.Domato.com. All rights reserved.
+        </div>
+    </footer>
 </body>
 </html>
